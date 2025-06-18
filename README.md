@@ -1,71 +1,99 @@
-🔐 Digital Door Lock using Arduino
+# 🔐 Digital Door Lock using Arduino
 
-This project demonstrates a secure and smart digital door lock system built using Arduino Nano. It utilizes a 4x4 keypad for user input, an LCD display for real-time feedback, and a servo motor to physically lock or unlock the door. This system is ideal for basic home or office security projects.
+This project demonstrates a secure and smart **digital door lock system** built using an **Arduino Nano**. It utilizes a **4x4 keypad** for password entry, an **LCD display** for real-time feedback, and an **SG90 servo motor** to physically lock or unlock the door. Designed for educational and prototype purposes, this system is ideal for home or office security demonstration models.
 
-📌 Features
+---
 
-Password-protected door locking system
-Real-time LCD feedback
-Servo motor-based locking mechanism
-Easy hardware integration with Arduino Nano
-Prototype made using Styrofoam for demonstration
-🧰 Components Used
+## 📌 Features
 
-Component	Description
-Arduino Nano	Main controller for processing input and controlling output
-4x4 Keypad Module	Used to enter the password
-SG90 Servo Motor	Acts as the door lock actuator
-I2C 16x2 LCD	Displays status messages to the user
-Breadboard	For assembling the circuit without soldering
-Jumper Wires	For electrical connections
-Door Lock & Styrofoam	For creating a model prototype of the locking system
-5V DC Adapter	Powers Arduino Uno and components externally
-⚙️ Working Principle
+- Password-protected door locking system  
+- Real-time LCD feedback for user interaction  
+- Servo motor-based locking mechanism  
+- Easy-to-build and compatible with Arduino Nano  
+- Prototype built using Styrofoam for demonstration purposes  
 
-Initialization:
+---
 
-LCD displays: WELCOME TO DOOR LOCK SYSTEM
-System is ready to receive input.
-Password Entry:
+## 🧰 Components Used
 
-User enters password via keypad.
-LCD displays: Enter Password and shows the digits.
-Validation:
+| Component            | Description                                         |
+|---------------------|-----------------------------------------------------|
+| Arduino Nano         | Main controller to process input/output            |
+| 4x4 Keypad Module    | Used for entering the password                     |
+| SG90 Servo Motor     | Acts as the door lock actuator                     |
+| I2C 16x2 LCD         | Displays status messages to the user               |
+| Breadboard           | Used to assemble the circuit without soldering     |
+| Jumper Wires         | For making electrical connections                  |
+| Styrofoam & Lock     | Used for building the physical demo model          |
+| 5V DC Adapter        | External power supply for Arduino and components   |
 
-If password is correct, servo motor rotates to unlock the door.
-If incorrect, the lock remains engaged.
-🔄 Workflow Summary
+---
 
-Arduino Setup:
-Arduino Nano acts as the main controller.
-Hardware Connections:
-Keypad connected to D2-D9
-Servo connected to D11
-I2C LCD connected to A4 (SDA) and A5 (SCL)
-Code Upload:
-Use Arduino IDE to upload the code to the Nano.
-Enclosure Build:
-Components installed in a Styrofoam model for demonstration.
-📷 Connection
+## ⚙️ Working Principle
 
-Screenshot 2025-05-05 114433
+### 🟢 Initialization
+- LCD displays: `WELCOME TO DOOR LOCK SYSTEM`
+- System waits for password input
 
-🛠️ How to Build
+### 🔢 Password Entry
+- User types in password via the keypad
+- LCD shows: `Enter Password` with typed digits (or asterisks)
 
-Connect all components as described in the schematic.
-Power up the Arduino Nano.
-Upload the code.
-Input the password using the keypad.
-Watch the servo motor engage or remain static depending on correctness.
-📄 Project Report
+### ✅ Validation
+- If password is correct:
+  - Servo motor rotates → **Door unlocked**
+- If password is incorrect:
+  - Servo remains in lock position → **Access denied**
 
-A detailed project report is available in the attached PDF file, which includes:
+---
 
-Component descriptions
-Circuit explanation
-Flowchart
-Working logic
-Conclusion
-📬 Authors
+## 🔄 Workflow Summary
 
-Project developed by a student team as part of a learning activity in Arduino-based security systems.
+### 🔧 Arduino Setup
+- Arduino Nano is programmed using Arduino IDE
+
+### ⚡ Hardware Connections
+- **Keypad** → D2 to D9  
+- **Servo** → D11  
+- **I2C LCD** → A4 (SDA), A5 (SCL)
+
+### 💾 Code Upload
+- Use Arduino IDE to upload the source code to the Arduino Nano
+
+### 🧱 Enclosure Build
+- Components are mounted into a Styrofoam model with a lock mechanism
+
+---
+
+## 📷 Connection Diagram / Model
+![Image 7](https://github.com/user-attachments/assets/072534a9-74ff-406d-9724-3ca997a7243c)
+
+---
+
+## 🛠️ How to Build
+
+1. Connect all components according to the circuit diagram.
+2. Power up the Arduino Nano using a 5V DC adapter.
+3. Upload the Arduino code using Arduino IDE.
+4. Enter password via the 4x4 keypad.
+5. Observe the servo motor locking/unlocking based on correctness.
+
+---
+
+## 📄 Project Report
+
+A detailed project report is available in the attached PDF (`Digital-Door-Lock-Report.pdf`) which includes:
+
+- Full component list  
+- Circuit diagrams  
+- Workflow and flowchart  
+- Working logic  
+- Results and conclusion  
+
+---
+
+## 📬 Authors
+
+This project was developed by a student team as part of a **university learning activity** focused on **Arduino-based security systems**.
+
+---
